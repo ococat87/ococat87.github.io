@@ -1,6 +1,8 @@
 body {
-  <img src"SGjpg"
+  <img src"SGjpg" alt="Profile Picture"
   background-color: #444444;
+  background-image:url(../img/header-background.jpg)
+       
   color: #dddddd;
   front-family: Arial, Helvetic,sans-serif;
   Margin: 10% 20% 
@@ -12,3 +14,4 @@ body {
       border-bottom: 1px solid#dddddd
       background-color: rgba(0,0,0 0,1)
 }
+
