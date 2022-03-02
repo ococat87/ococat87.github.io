@@ -1,85 +1,173 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Said Guled Resume</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1><h1>Said Guled</h1>
-  <h2>
-1044 Fuller Ave  
-St.Paul, MN 55104
-(612) 702-8780 
-SaeedAmaan87@gmail.com </h2></h1>
-  <h2></h2>
-  <hr />
-  <br>
-  <p class="head">EXPERIENCE</p>
-  <ul> Carestay Homes            Minneapolis, MN            October 2014 - Present 
-    <l> Home Health Aid
-    <li>Investigated and prepared reports on accidents, incidents, and suspicious activities</li>
-    <li>Reporting to nurses about patient’s health status</li>
-    <li>Teaching patient self-care skills</li>
-  </ul>
-  
-  <ul> Brian Coyle Community Center       Minneapolis, MN       September 2012- October 2014 
-  Youth Mentor Coordinator
-    
-  <li>Build relationships with youth who are at risk for engaging violence and other negative 
-behavior.</li>
- <li>Worked with Youth with disability or mental illness.</li>
-    <li>Provided basic counseling.</li>
-  </ul>
-  
-  <ul>Harvest Seed Academy             Minneapolis, MN                September 2009 – July 2012 
-      E.A. Teacher Assistant
-    
-  <li>Promoted better relationship and understanding among Muslims and Non-Muslims 
-through educational and cultural activities. 
-SKILLS   Extensive knowledge & experience with: Microsoft Office, Fluent in the Somali and English 
-languages: reading, writing, and comprehension</li>
-    <li>Appointed executive leadership of the Community, and monitored executive performance 
-in carrying out Board policies and procedures.</li>
-    <li>Made visits to student’s residences to develop healthy; positive family attitudes towards 
-academic success, attendance at school, and student development.  
-LEADERSHIP   Somali Community – Member of Board of Trustees.</li>
-    <li>Worked closely with administrators, teachers, and parents/guardians regarding their 
-student’s participation in school and responding to the needs of students and their 
-families.</li>
-  </ul>
-  
-  <p class="head">Education</p>
-  <ul>
-    <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-      <li>Wilton High School</li>
-    </a>
-    <!--Link-->
-    <a href="https://www.silvermineart.org/">
-      <li>Silvermine School of Arts</li>
-    </a>
-    <li>Codeacademy</li>
-  </ul>
-  <p class="head">Experience</p>
-  <ul>
-    <li>Student Technology Intern for Wilton School District</li>
-    <li>Babysitter</li>
-  </ul>
-  <p class="head">Extracurriculars</p>
-  <ul>
-    <li>Recycling Club</li>
-    <li>Gardening Club</li>
-    <li>Book Club</li>
-  </ul>
-</div>
-<div class="right"></div>
-<div id="footer">
-  <h2 id="name">Emily</h2>
-</div>
-</body>
-</html>
+html
+  head
+  body.A4
+    .sheet
+      button.btn.btn-print.btn-sm.btn-light(onClick='handlePrint()')
+        | <i class="fa fa-print"></i>
+        | Print
+      .two-column.resume
+        section.resume__section.resume__header
+          .resume__content
+            h1 Thiago Braga
+            .info-item
+              span.info-label
+                i.fa.fa-location-arrow
+              span.info-text
+                | 770 Marçal de Arruda Campos St., Bauru, SP, Brazil,
+                | Zip: 17063-060
+            .info-item
+              span.info-label
+                i.fa.fa-envelope
+              span.info-text contato@thiagobraga.org
+            .info-item
+              span.info-label
+                i.fa.fa-phone
+              span.info-text +55 14 99165 5873
+
+        .resume__columns
+          .resume__main
+            section.resume__section.resume__summary
+              .resume__content
+                .resume__section-title
+                  i.fa.fa-pencil-square-o
+                  h2 Professional Summary
+                .other
+                  .other-info
+                    p
+                      | PHP & JavaScript developer + Devops Enthusiast with a
+                      | decade of success leading teams in delivering appropriate
+                      | technology solutions for desktop and mobile products.
+                    p
+                      | Comprehensive knowledge of enterprise architecture,
+                      | agile methodologies, remote work, cloud services and
+                      | web-based applications.
+
+            section.resume__section.resume__experience
+              .resume__content
+                .resume__section-title
+                  i.fa.fa-briefcase
+                  h2 Employment History
+                .xp-item
+                  .xp-job
+                    | Full Stack Developer / DevOps
+                    | <span>@ Grupo Tesseract</span>
+                    br
+                    small Bauru, Sao Paulo
+                  .xp-date Apr. 2017 – current
+                  .xp-detail
+                    ul
+                      li
+                        | Design, build or maintain web sites using Laravel,
+                        | Bootstrap, Vue, React and WordPress
+                      li Create scripting language tools
+                      li Automate dev, builds and deploy tasks
+                      li
+                        | Maintain understanding of current web technologies or
+                        | programming practices through continuing education,
+                        | reading and sharing knowledge
+                      li
+                        | Develop databases that support web applications and
+                        | web sites
+                      li
+                        | Develop and document style guidelines for web site
+                        | content
+                      li Recommend and implement performance improvements
+                      li
+                        | Select programming languages, design tools,
+                        | or applications
+
+                .xp-item
+                  .xp-job
+                    | Full Stack Developer
+                    | <span>@ Jurid Publicações Eletrônicas</span>
+                    br
+                    small Bauru, Sao Paulo
+                  .xp-date Aug. 2018 – Apr. 2020
+                  .xp-detail
+                    ul
+                      li
+                        | Build or maintain web sites using native PHP, Python
+                        | and JavaScript
+                      li
+                        | Maintain and improve production databases running on
+                        | Elasticsearch, Redis, PostgreSQL and MySQL
+                      li Provide backup and maintenance of GNU/Linux servers
+                      li Provide documentation for existent and new applications
+
+          .resume__side
+            section.resume__section.resume__skills
+              .resume__content
+                .resume__section-title
+                  i.fa.fa-align-center
+                  h2 Skills
+                .resume__text
+                  .extra
+                    .extra-info
+                      | PHP
+                      br
+                      small PHP 5 · PHP 7 · Laravel
+                    .extra-details
+                      .extra-details__progress(style='width:90%')
+                  .extra
+                    .extra-info
+                      | JavaScript
+                      br
+                      small React · React Native · Vue
+                    .extra-details
+                      .extra-details__progress(style='width:87%')
+                  .extra
+                    .extra-info
+                      | HTML
+                      br
+                      small HTML5 · Markdown · Pug
+                    .extra-details
+                      .extra-details__progress(style='width:100%')
+                  .extra
+                    .extra-info
+                      | CSS
+                      br
+                      small Stylus · Sass · Bootstrap
+                    .extra-details
+                      .extra-details__progress(style='width:100%')
+                  .extra
+                    .extra-info
+                      | DevOps
+                      br
+                      small Docker · Shell · AWS · CI/CD
+                    .extra-details
+                      .extra-details__progress(style='width:82%')
+                  .extra
+                    .extra-info
+                      | Databases
+                      br
+                      small PostgreSQL · MySQL · Elasticsearch · Redis
+                    .extra-details
+                      .extra-details__progress(style='width:80%')
+                  .extra
+                    .extra-info
+                      | Operating Systems
+                      br
+                      small
+                        | <i class="fa fa-linux"></i> GNU/Linux ·
+                        | <i class="fa fa-apple"></i> Mac OS ·
+                        | <i class="fa fa-windows"></i> Windows
+                    .extra-details
+                      .extra-details__progress(style='width:90%')
+
+            section.resume__section.resume__languages
+              .resume__content
+                .resume__section-title
+                  i.fa.fa-globe
+                  h2 Languages
+                .extra
+                  .extra-info Portuguese <small>(native)</small>
+                  .extra-details
+                    .extra-details__progress(style='width:100%')
+                .extra
+                  .extra-info English
+                  .extra-details
+                    .extra-details__progress(style='width:65%')
+                .extra
+                  .extra-info Spanish
+                  .extra-details
+                    .extra-details__progress(style='width:20%')
