@@ -1,81 +1,89 @@
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1>Said Guled</h1>
-  <h2>
-1044 Fuller Ave  
-St.Paul, MN 55104
-(612) 702-8780 
-SaeedAmaan87@gmail.com </h2>
-  <hr />
-  <br>
-  <p class="head">OBJECTIVE</p>
-  <ul>
-    <li>Obtain a position where I can maximize my diverse background, strong work ethic, positive 
-attitude, and training experiences. 
-</li>
-  </ul>
-  
-  
-  
-  <p class="head">EXPERIENCE</p>
-  <ul>
-  <ul>Carestay Homes            Minneapolis, MN            October 2014 - Present 
-    <l> Home Health Aid  </ul>
-   
-    <li>Teaching patient self-care skills
-    <li>Reporting to nurses about patient’s health status</li>
-    <li>Investigated and prepared reports on accidents, incidents, and suspicious activities</li>
-    
-    
-    
- <ul>Brian Coyle Community Center       Minneapolis, MN       September 2012- October 2014 
-  Youth Mentor Coordinator </ul>
-    
-    <li>Worked with Youth with disability or mental illness.</li>
-    <li>Provided basic counseling.</li>
-    <li>Build relationships with youth who are at risk for engaging violence and other negative 
-behavior. </li>
-    
- <ul>Harvest Seed Academy             Minneapolis, MN                September 2009 – July 2012 
-      E.A. Teacher Assistant</ul>
-  
-   <li>Promoted better relationship and understanding among Muslims and Non-Muslims 
-through educational and cultural activities. 
-SKILLS   Extensive knowledge & experience with: Microsoft Office, Fluent in the Somali and English 
-languages: reading, writing, and comprehension.</li>
-    <li>Appointed executive leadership of the Community, and monitored executive performance 
-in carrying out Board policies and procedures. </li>
-    <li>Made visits to student’s residences to develop healthy; positive family attitudes towards 
-academic success, attendance at school, and student development.  
-LEADERSHIP   Somali Community – Member of Board of Trustees.</li>
-    <li>Worked closely with administrators, teachers, and parents/guardians regarding their 
-student’s participation in school and responding to the needs of students and their 
-families.</li>
-  </ul>
-  <p class="head">OBJECTIVE</p>
-  <ul>
-    <li>Web Design with HTML & CSS</li>
-  </ul>
-  <p class="head">Education</p>
-  <ul>
-    <a href="http://https://www.saintpaul.edu/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH_7EYO8tq8HGDiZ-qEgsibUGW5T1f5XxmVCL-aH36I5qcQb1en2I9hoCYFAQAvD_BwE</li>
-    </a>
-    <!--Link-->
-    <a href="https://www.silvermineart.org/">
-      <li>Silvermine School of Arts</li>
-    </a>
-    <li>Codeacademy</li>
-  </ul>
-   
-  <p class="head">Extracurriculars</p>
-  <ul>
-    <li>Sports</li>
-    <li>Community Program Coordinator</li>
-    <li>Book Club</li>
-  </ul>
-</div>
-<div class="right"></div>
-<div id="footer">
-  <h2 id="name">Said Guled</h2></div>
+* {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/*body {
+    min-width: 500px;
+}*/
+
+div {
+  border-radius: 5px;
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #ffcccc;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffcccc;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+}
+
+p,
+li {
+  font-family: 'Cormorant Garamond';
+}
+
+.head {
+  font-size: 20px;
+}
+
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
