@@ -1,173 +1,143 @@
-html
-  head
-  body.A4
-    .sheet
-      button.btn.btn-print.btn-sm.btn-light(onClick='handlePrint()')
-        | <i class="fa fa-print"></i>
-        | Print
-      .two-column.resume
-        section.resume__section.resume__header
-          .resume__content
-            h1 Thiago Braga
-            .info-item
-              span.info-label
-                i.fa.fa-location-arrow
-              span.info-text
-                | 770 Marçal de Arruda Campos St., Bauru, SP, Brazil,
-                | Zip: 17063-060
-            .info-item
-              span.info-label
-                i.fa.fa-envelope
-              span.info-text contato@thiagobraga.org
-            .info-item
-              span.info-label
-                i.fa.fa-phone
-              span.info-text +55 14 99165 5873
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div class="resume-wrapper">
+	<section class="profile section-padding">
+		<div class="container">
+			<div class="picture-resume-wrapper">
+        <div class="picture-resume">
+        <span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" /></span>
+        <svg version="1.1" viewBox="0 0 350 350">
+  
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+    </filter>
+  </defs>
+  
+  
+<g filter="url(#goo)" >  
+  
+  <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+  
+  <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+  <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
 
-        .resume__columns
-          .resume__main
-            section.resume__section.resume__summary
-              .resume__content
-                .resume__section-title
-                  i.fa.fa-pencil-square-o
-                  h2 Professional Summary
-                .other
-                  .other-info
-                    p
-                      | PHP & JavaScript developer + Devops Enthusiast with a
-                      | decade of success leading teams in delivering appropriate
-                      | technology solutions for desktop and mobile products.
-                    p
-                      | Comprehensive knowledge of enterprise architecture,
-                      | agile methodologies, remote work, cloud services and
-                      | web-based applications.
-
-            section.resume__section.resume__experience
-              .resume__content
-                .resume__section-title
-                  i.fa.fa-briefcase
-                  h2 Employment History
-                .xp-item
-                  .xp-job
-                    | Full Stack Developer / DevOps
-                    | <span>@ Grupo Tesseract</span>
-                    br
-                    small Bauru, Sao Paulo
-                  .xp-date Apr. 2017 – current
-                  .xp-detail
-                    ul
-                      li
-                        | Design, build or maintain web sites using Laravel,
-                        | Bootstrap, Vue, React and WordPress
-                      li Create scripting language tools
-                      li Automate dev, builds and deploy tasks
-                      li
-                        | Maintain understanding of current web technologies or
-                        | programming practices through continuing education,
-                        | reading and sharing knowledge
-                      li
-                        | Develop databases that support web applications and
-                        | web sites
-                      li
-                        | Develop and document style guidelines for web site
-                        | content
-                      li Recommend and implement performance improvements
-                      li
-                        | Select programming languages, design tools,
-                        | or applications
-
-                .xp-item
-                  .xp-job
-                    | Full Stack Developer
-                    | <span>@ Jurid Publicações Eletrônicas</span>
-                    br
-                    small Bauru, Sao Paulo
-                  .xp-date Aug. 2018 – Apr. 2020
-                  .xp-detail
-                    ul
-                      li
-                        | Build or maintain web sites using native PHP, Python
-                        | and JavaScript
-                      li
-                        | Maintain and improve production databases running on
-                        | Elasticsearch, Redis, PostgreSQL and MySQL
-                      li Provide backup and maintenance of GNU/Linux servers
-                      li Provide documentation for existent and new applications
-
-          .resume__side
-            section.resume__section.resume__skills
-              .resume__content
-                .resume__section-title
-                  i.fa.fa-align-center
-                  h2 Skills
-                .resume__text
-                  .extra
-                    .extra-info
-                      | PHP
-                      br
-                      small PHP 5 · PHP 7 · Laravel
-                    .extra-details
-                      .extra-details__progress(style='width:90%')
-                  .extra
-                    .extra-info
-                      | JavaScript
-                      br
-                      small React · React Native · Vue
-                    .extra-details
-                      .extra-details__progress(style='width:87%')
-                  .extra
-                    .extra-info
-                      | HTML
-                      br
-                      small HTML5 · Markdown · Pug
-                    .extra-details
-                      .extra-details__progress(style='width:100%')
-                  .extra
-                    .extra-info
-                      | CSS
-                      br
-                      small Stylus · Sass · Bootstrap
-                    .extra-details
-                      .extra-details__progress(style='width:100%')
-                  .extra
-                    .extra-info
-                      | DevOps
-                      br
-                      small Docker · Shell · AWS · CI/CD
-                    .extra-details
-                      .extra-details__progress(style='width:82%')
-                  .extra
-                    .extra-info
-                      | Databases
-                      br
-                      small PostgreSQL · MySQL · Elasticsearch · Redis
-                    .extra-details
-                      .extra-details__progress(style='width:80%')
-                  .extra
-                    .extra-info
-                      | Operating Systems
-                      br
-                      small
-                        | <i class="fa fa-linux"></i> GNU/Linux ·
-                        | <i class="fa fa-apple"></i> Mac OS ·
-                        | <i class="fa fa-windows"></i> Windows
-                    .extra-details
-                      .extra-details__progress(style='width:90%')
-
-            section.resume__section.resume__languages
-              .resume__content
-                .resume__section-title
-                  i.fa.fa-globe
-                  h2 Languages
-                .extra
-                  .extra-info Portuguese <small>(native)</small>
-                  .extra-details
-                    .extra-details__progress(style='width:100%')
-                .extra
-                  .extra-info English
-                  .extra-details
-                    .extra-details__progress(style='width:65%')
-                .extra
-                  .extra-info Spanish
-                  .extra-details
-                    .extra-details__progress(style='width:20%')
+</g>  
+</svg>
+      </div>
+         <div class="clearfix"></div>
+ </div>
+      <div class="name-wrapper">
+        <h1>John <br/>Anderson</h1><!-- YOUR NAME AND LAST NAME  -->
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+      	<ul class="list-titles">
+      		<li>Call</li>
+      		<li>Mail</li>
+      		<li>Web</li>
+      		<li>Home</li>
+      	</ul>
+        <ul class="list-content ">
+        	<li>+34 123 456 789</li> <!-- YOUR PHONE NUMBER  -->
+        	<li>j.anderson@gmail.com</li> <!-- YOUR EMAIL -->
+        	<li><a href="#">janderson.com</a></li> <!-- YOUR WEBSITE  -->
+        	<li>Los Angeles, CA</li> <!-- YOUR STATE AND COUNTRY  -->
+        </ul>
+      </div>
+      <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+      	<p><span class="bold">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod congue nisi, nec consequat quam. In consectetur faucibus turpis eget laoreet. Sed nec imperdiet purus. </p>
+      </div>
+      <div class="contact-social clearfix">
+      	<ul class="list-titles">
+      		<li>Twitter</li>
+      		<li>Dribbble</li>
+      		<li>Codepen</li>
+      	</ul>
+        <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+      		<li><a href="">@janderson</a></li> <!-- YOUR TWITTER USER  -->
+      		<li><a href="">janderson</a></li> <!-- YOUR DRIBBBLE USER  -->
+      		<li><a href="">janderson</a></li> <!-- YOUR BEHANCE USER  -->
+      	</ul>
+      </div>
+		</div>
+	</section>
+  
+  <section class="experience section-padding">
+  	<div class="container">
+  		<h3 class="experience-title">Experience</h3>
+      
+      <div class="experience-wrapper">
+      	<div class="company-wrapper clearfix">
+      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+        	<div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+         <div class="job-wrapper clearfix">
+        	<div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div> 
+        
+         <div class="job-wrapper clearfix">
+        	<div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>   <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+      </div><!--Skill experience-->
+      
+      <div class="section-wrapper clearfix">
+      	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
+        	<ul>
+        		<li class="skill-percentage">HTML / HTML5</li>
+        		<li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
+        		<li class="skill-percentage">Javascript</li>
+        		<li class="skill-percentage">Jquery</li>
+        		<li class="skill-percentage">Wordpress</li>
+        		<li class="skill-percentage">Photoshop</li>
+            
+        	</ul>
+        
+      </div>
+      
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobbies</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
+      </div>
+      
+  	</div>
+  </section>
+  
+  <div class="clearfix"></div>
+</div>
